@@ -18,7 +18,7 @@ body
     justify-content: center; /* centraliza horizontalmente */
     align-items: center; /* centraliza verticalmente */
     flex-direction: column;
-	overflow: hidden;
+    overflow: hidden;
 
 }
 
@@ -112,7 +112,9 @@ border-color: rgb(48, 43, 43);
 border-width: 10px;
 background-color: #ffffff;
 }
-#buttons-container {
+
+#buttons-container 
+{
   position: absolute;
   bottom: -200px;
   left: 0;
@@ -124,19 +126,20 @@ background-color: #ffffff;
 	margin: 0;
 }
 
-#buttons-container.show {
+#buttons-container.show 
+{
   bottom: 0;
 }
 
-#buttons-container button {
+#buttons-container button 
+{
   margin: 10px;
   border: none;
   background-color: transparent;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-	margin: 0;
-  
+  margin: 0;
 }
 
 #buttons-container button:hover {
@@ -145,18 +148,19 @@ background-color: #ffffff;
 .Menu
 {
   position: relative;
-  left: 50%;
-  top: 77%;
-  transform: translate(-50%, -50%);
+  top: 575px;
+  z-index: 0;
 
   
 }
 </style>
 
 <body>
+  <button id="menu" class="Menu"><img src="menu.png" style="width: 30px; height: 30px;"><br>Menu</button>
     <!-- Formulario -->
     <fieldset class="borda">
-        <fieldset>
+        
+      <fieldset>
 
         <legend> Cadastro Funcionarios</legend>
         CPF: <input type="text" class="caixa_larga1" id="CPF">
@@ -219,7 +223,7 @@ background-color: #ffffff;
     </fieldset>
     <br> 
     <br>       
-    <button id="menu" class="Menu">Menu</button>
+    
 
 	<div id="buttons-container">
 		<button><img src="disket.png" style="width: 50px; height: 50px;"><br>Enviar</button>
@@ -232,6 +236,8 @@ background-color: #ffffff;
     
         
 </fieldset>
+
+
 
 </body>
 
