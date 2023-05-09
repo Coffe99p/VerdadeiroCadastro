@@ -18,6 +18,7 @@ body
     justify-content: center; /* centraliza horizontalmente */
     align-items: center; /* centraliza verticalmente */
     flex-direction: column;
+
 }
 
 .botao:hover
@@ -92,14 +93,6 @@ body
   justify-content: center;
 }
 
-.borda
-{
-border-style: solid;
-border-color: rgb(48, 43, 43);
-border-width: 10px;
-background-color: #ffffff;
-}
-
 .botoes button 
 {
   margin: 2px;
@@ -111,8 +104,14 @@ background-color: #ffffff;
   transform: scale(1.1);
 }
 
-#buttons-container 
+.borda
 {
+border-style: solid;
+border-color: rgb(48, 43, 43);
+border-width: 10px;
+background-color: #ffffff;
+}
+#buttons-container {
   position: absolute;
   bottom: -200px;
   left: 0;
@@ -121,7 +120,7 @@ background-color: #ffffff;
   background-color: #f2f2f2;
   padding: 40px;
   transition: all 1s ease-in-out;
-  margin: 0;
+	margin: 0;
 }
 
 #buttons-container.show {
@@ -135,20 +134,19 @@ background-color: #ffffff;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  margin: 0;
   
 }
 
 #buttons-container button:hover {
   transform: scale(1.1);
 }
-
 .Menu
 {
   position: relative;
   left: 50%;
   top: 77%;
   transform: translate(-50%, -50%);
+
   
 }
 </style>
@@ -219,7 +217,6 @@ background-color: #ffffff;
     </fieldset>
     <br> 
     <br>       
-    
     <button id="menu" class="Menu">Menu</button>
 
 	<div id="buttons-container">
@@ -254,12 +251,10 @@ background-color: #ffffff;
             Femenino.checked = false;
 
         }
-        
-const menuButton = document.getElementById('menu');
+        const menuButton = document.getElementById('menu');
 const buttonsContainer = document.getElementById('buttons-container');
 
-menuButton.addEventListener('click', function() 
-{
+menuButton.addEventListener('click', function() {
   buttonsContainer.classList.toggle('show');
 });
 
